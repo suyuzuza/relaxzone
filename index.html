@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>RelaxZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RelaxZone 🌿</h1>
+    <p>Wybierz dźwięk i zrelaksuj się</p>
+
+    <div class="buttons">
+      <button onclick="playSound('rain')">🌧️ Deszcz</button>
+      <button onclick="playSound('forest')">🌲 Las</button>
+      <button onclick="playSound('waves')">🌊 Fale</button>
+      <button onclick="stopSound()">⏹️ Stop</button>
+    </div>
+  </div>
+
+  <audio id="rain" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+  <audio id="forest" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"></audio>
+  <audio id="waves" loop src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
